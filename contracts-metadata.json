@@ -6,10 +6,11 @@
   "tableSchema": {
     "columns": [
       {
+        "@type": "Column",
         "name": "URI",
         "titles": "URI",
         "dc:description": "The URI of contract",
-        "datatype": "string",
+        "datatype": "anyURI",
         "required": true
       },
       {
@@ -26,7 +27,7 @@
         "dc:description": "The data of the   contract",
         "datatype": "any",
         "lang": "en",
-        "required": false
+        "required": true
       }
     ],
     "primaryKey": "URI"
