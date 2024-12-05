@@ -1,0 +1,34 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "@type": "Table",
+  "@id": "https://example.org/table1",
+  "url": "https://example.org/table1.csv",
+  "tableSchema": {
+    "columns": [
+      {
+        "name": "URI",
+        "titles": "URI",
+        "dc:description": "The URI of contract",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "publishedTime",
+        "titles": "publishedTime",
+        "dc:description": "The time when the contract was published",
+        "datatype": "dateTime",
+        "lang": "en",
+        "required": true
+      },
+      {
+        "name": "contractType",
+        "titles": "contractData",
+        "dc:description": "The data of the   contract",
+        "datatype": "any",
+        "lang": "en",
+        "required": false
+      }
+    ],
+    "primaryKey": "URI"
+  }
+}
